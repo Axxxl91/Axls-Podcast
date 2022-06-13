@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.cuerpo {
+    background-image: url(../Imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header header header header header"
+        "col1 col2 col2 col3 col3"
+        "col1 col2 col2 col3 col3"
+        "footer footer footer footer footer";
+}
+
+.header {
+    background-color: #000000bd;
+    grid-area: header;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.Logo {
+    height: 150px;
+    width: 150px;
+    margin-left: 50px;
+    z-index: 100;
+}
+
+.h1header {
+    font-style: oblique;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.header ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-right: 70px;
+}
+
+.header li {
+    display: inline-block;
+    padding: 1rem;
+}
+
+#facebook,
+#youtube,
+#spotify {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    z-index: 200;
+}
+
+#facebook:hover{
+    color:rgb(0, 0, 255);
+}
+
+#youtube:hover{
+    color:rgb(255, 0, 0);
+}
+#spotify:hover{
+    color:rgb(0, 180, 0);
+}
+
+
+
+/*CSS DE LA INFO DEL ANFITRION*/
+.col1 {
+    grid-area: col1;
+    background-color: #000000bd;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+.foto-perfil img {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    width: 200px;
+    height: 200px;
+    border: 5px;
+    border-radius: 550px;
+    border-style: solid;
+
+
+}
+
+.informacion {
+    text-align: justify;
+}
+
+.col1 p {
+    font-size: 1.3rem;
+}
+
+.col1 ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-right: 70px;
+}
+
+.col1 li {
+    display: inline-block;
+}
+
+.col1 .redes {
+    margin-top: 50px;
+}
+
+.redes a {
+    padding: 0.5em;
+}
+
+/*CSS DEL LOS ULTIMOS CAPITULOS*/
+.col2 {
+    grid-area: col2;
+    height: auto;
+    background-color: #000000bd;
+}
+
+.col2 h1 {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 60px;
+    margin-bottom: 45px;
+    font-size: 2.5rem;
+    font-style: oblique;
+    font-weight: bolder;
+
+}
+
+.video {
+    width: 490px;
+    height: 100px;
+    border: solid white;
+    border-radius: 20px;
+}
+
+.media {
+    display: flex;
+    justify-content: center;
+
+}
+
+.media2 {
+    display: flex;
+    justify-content: center;
+}
+
+/*CSS DE LA SECCION DE BUSCAR VIDEOS*/
+#bus{
+
+margin-bottom: 100px;
+
+}
+
+
+.col3 {
+    grid-area: col3;
+    height: auto;
+    background-color: #000000bd;
+}
+
+.col3 h1 {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 60px;
+    font-size: 1.8rem;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+.formsearch {
+    display: flex;
+    padding: 0px 50px;
+    justify-content: center;
+    margin-bottom: 58px;
+    margin-top: -100px;
+}
+
+.formsearch2 {
+    display: inline-flex;
+    width: 100%;
+}
+
+#find {
+    background-color: #694DA8;
+    color: white;
+    border-color: white;
+}
+
+#Search {
+    color: black;
+    font-weight: bolder;
+}
+
+.encabezado {
+    height: 200px;
+}
+
+/*Aqui comienza el css de la lista de videos buscados*/
+.video-list{
+    
+    display: block;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+
+.video-list img {
+    display: inline-block;
+    width: 200px;
+    height: 165px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+
+.video-list h3 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.video-list .description {
+    display: block;
+    font-size: 15px;
+    color: #ffffff
+    
+}
+.description:hover{
+    color: black;
+}
+.video-list .row>div {
+    font-size: 8px;
+    padding: 0;
+    height: 150px;
+}
+
+.video-list .row {
+    display: inline-flex;
+    width: 90%;
+    height: 170px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.video-list .video-info {
+    padding-left: 7px !important;
+}
+
+.video {
+    height: 50px;
+    color: white;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+.video, .video p{
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-weight: 30px;
+    font-size: bolder;
+    
+}
+.video:hover, .video:hover p{
+    background-color: white;
+    color: black;
+    font-weight: 30px;
+    
+}
+.col3 .media .video{
+background-color: transparent;
+
+}
+    
+
+
+
+/*Aqui termina el css de la lista de videos buscados*/
+
+/*CSS DEL FOOTER*/
+.footer {
+    grid-area: footer;
+    background-color: black;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.marca {
+    display: flex;
+    height: 50px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+
+}
+
+.redes2 li {
+    display: block;
+    padding: 1rem;
+
+}
+
+.redes2 ul {
+    display: inline-flex;
+    flex-direction: row;
+
+}
+
+.redes2 a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .cuerpo {
+
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: "header"
+            "col1"
+            "col2"
+            "col3"
+            "footer";
+    }
+
+    .video {
+        width: 100%;
+        height: 500px;
+    }
+
+    .redes {
+        display: none;
+    }
+
+    .header ul {
+        display: none;
+    }
+    .video-list .row {
+        display: inline-flex;
+        width: 80%;
+        height: 170px;
+       margin-left: 100px;
+    }
+    .video-list img {
+        display: inline-block;
+        width: 220px;
+        height: 165px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .video {
+        width: 80%;
+        height: 300px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+
+    .video {
+        width: 80%;
+        height: 500px;
+    }
+}
